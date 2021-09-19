@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    padding: 14px 18px !important;
+    line-height: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.p-title {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 70px;
+}
+
+#About-us p {
+    color: #666;
+    color: #6190a3;
+}
+
+.navbarNav{
+    flex-grow: 0 !important;
+}
+
+/* icons */
+
+.fas {
+    font-size: 30px;
+    color: #f25454;
+    padding: 0 4px 0 0;
+}
+
+.far {
+    font-size: 30px;
+    color: #f25454;
+    padding: 0 4px 0 0;
+}
+
+.fab {
+    font-size: 30px;
+    color: #f25454;
+    padding: 0 4px 0 0;
+}
+
+/* icons */
+
+/* head */
+
+.collapse .nav-link {
+    color: white !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.homee span {
+    color: #f25454;
+}
+
+.collapse .nav-link:hover {
+    color: #f25454 !important;
+}
+
+.navbar-nav .fab {
+    font-size: 18px;
+    color: white;
+    padding: 8px 6px;
+}
+
+.navbar-nav .fab:hover {
+    color: #f25454;
+}
+.carousel-caption {
+    bottom: 35%;
+} 
+
+.carousel-caption h1 {
+    text-transform: uppercase !important;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.about-head h1::before {
+    content: "A";
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    font-size: 3.9rem;
+    opacity: .5;
+    transform: translateX(50%);
+    color: #6c757d;
+}
+
+#Our-Team .about-head h1::before {
+    content: "O";
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    font-size: 3.9rem;
+    opacity: .5;
+    transform: translateX(50%);
+    color: #6c757d;  
+}
+#services .about-head h1::before {
+    content: "S";
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    font-size: 3.9rem;
+    opacity: .5;
+    transform: translateX(50%);
+    color: #6c757d;
+}
+/*  */
+#Clients .about-head h1::before {
+    content: "G";
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    font-size: 3.9rem;
+    opacity: .5;
+    transform: translateX(50%);
+    color: #6c757d;
+}
+
+#contact-us .about-head h1::before {
+    content: "C";
+    position: absolute;
+    top: -22px;
+    right: 50%;
+    font-size: 3.9rem;
+    opacity: .5;
+    transform: translateX(50%);
+    color: #6c757d;
+}
+
+#contact-us .list-group p {
+    font-size: 14px;
+    color: #999;
+    margin: 2px 2px;
+}
+
+.item-services p {
+    font-size: 15px;
+    color: #666;
+    margin: 0 0 10px
+}
+
+.item-services h5:hover {
+    color: #f25454;
+}
+
+.about-head h1::after {
+    content: "";
+    background-color: black;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 50px;
+}
+
+.about-p {
+    top: 45%;
+    left: 42%;
+}
+
+.about-p::after {
+    content: "";
+    color: white;
+    background-color: #20c997;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    height: 3px;
+    width: 75px;
+    padding-top: 5px;
+    margin-top: 3px;
+}
+
+.progress {
+    height: 2px;
+    margin-top: 2px;
+}
+
+.progress-bar {
+    background-color: #f25454;
+}
+
+.progress-value span {
+    text-align: right;
+}
+
+/* OUR TEAM */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(242, 84, 84, .8);
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+
+.ourteam-item2:hover .overlay {
+    opacity: 1;
+}
+
+.ourteam-item2:hover h5 {
+    opacity: 1;
+}
+
+.ourteam-item2 img {
+    transition: all .3s ease-out;
+}
+
+.ourteam-item2:hover img {
+    transform: scale(1.2);
+}
+
+.ourteam-item2:hover h5 {
+    color: rgb(242, 84, 84);
+}
+
+#Our-Team .fab {
+    font-size: 18px;
+    color: white;
+}
+
+.position {
+    color: #b0b0b0;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Services */
+
+#services .col-md-4 {
+    padding: 5px 0;
+}
+
+/* contact us */
+
+.override {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 4%;
+    color: #fff;
+}
+
+.mine-carousel {
+    overflow: hidden;
+    opacity: .5;
+    background-color: transparent;
+    border: 1px solid white;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.mine-carousel:hover {
+    background-color: white;
+    opacity: 1;
+}
+
+#contact-us {
+    background-color: #fafafa;
+    padding-top: 30px;
+}
+
+#contact-us .row {
+    padding: 20px 0;
+}
+
+form .message {
+    height: 120px;
+}
+
+.form .btn {
+    background-color: #f25454 !important;
+}
+
+/* footer */
+#footer-top {
+    background-color: #222;
+    color: white;
+}
+
+#footer-top .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: #b0b0b0;
+    padding: 0;
+}
+
+#footer-top .list-group-item:hover {
+    color: #f25454;
+}
+
+#footer-top .tags a {
+    text-decoration: none;
+    color: #b0b0b0;
+    border: 1px solid #b0b0b0;
+    padding: 1px;
+    margin: 4px;
+    display: block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 2px 10px;
+    font-size: 13px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#footer-top .tags a:hover {
+    border-color: #f25454;
+    color: #f25454;
+}
+
+.footer-bottom {
+    background: #1a1a1a;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+}
+
+.footer-bottom p {
+    color: #b0b0b0;
+}
+
+.footer-bottom p a:hover {
+    color: #f25454 !important;
+}
+
+.footer-bottom .fab {
+    color: white;
+}
+
+/* contact */
+
+.carousel-indicators {
+    position: static;
+    width: 75%;
+    background-color: transparent;
+}
+
+
+.button-carousel {
+    height: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+    opacity: 1;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+}
+
+.carousel-indicators img {
+    height: inherit;
+}
+.carousel-inner p{
+    color: #b0b0b0;
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+   .carousel-caption h1 {
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.mine-carousel{
+    padding: 15px;
+ 
+}
+.carousel-control-prev-icon{
+    width: 20px;
+    height: 10px;
+}
+.carousel-control-next-icon{
+    width: 20px;
+    height: 10px;
+}
+.collapse .nav-link {
+    color: black !important;
+    font-size: 18px;
+    font-weight: bolder;
+}
+  }
