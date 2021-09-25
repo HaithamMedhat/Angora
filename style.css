@@ -6,21 +6,166 @@ input {
     padding: 14px 18px !important;
     line-height: 1;
 }
-
+a{
+    cursor: pointer;
+}
 body {
+    background-color: white ;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    overflow-y: hidden;
 }
-
+/* change color */
+#optionBox{
+    position: fixed;
+    top: 300px;
+    right: 0;
+    z-index: 9999;
+    /* background-color: thistle; */
+    color: white;
+ 
+}
+#toggleBtn{
+    background-color: black;
+    float: right;
+    padding: 5px;
+}
+#change-color{
+    background-color: rgb(0, 0, 0);
+    float: right;
+    padding: 10px;
+}
+.color-item{
+    /* background-color: rgb(127, 175, 175); */
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+/* loading screen */
+#arrow{
+    position: fixed;
+    bottom: 10;
+    right: 10;
+    z-index: 99999;
+    background-color: black;
+    padding: 10px;
+    display: none;
+}
+#arrow .fas{
+    padding: 0;
+    font-size: 25px;
+}
+#loading{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    background-color: rgb(85, 135, 182);
+    display: flex;
+}
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 212, 166);
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
 .p-title {
     font-size: 18px;
     color: #999;
     margin-bottom: 70px;
 }
-
-#About-us p {
-    color: #666;
+.lead{
+    margin-bottom: 70px;
+}
+#Navbar{
+    transition: background-color ease-in .5s  ;
+}
+/* #About-us */
+#About-us .container p {
     color: #6190a3;
 }
 
@@ -357,60 +502,85 @@ form .message {
     color: white;
 }
 
-/* contact */
-
-.carousel-indicators {
-    position: static;
-    width: 75%;
-    background-color: transparent;
+/*  slick */
+#Clients .c2{
+    padding: 0 50px;
 }
-
-
-.button-carousel {
-    height: 20px;
+.slideSlick img{
+       height: 100px;
+        width: 100px !important;
 }
-
-.carousel-indicators [data-bs-target] {
-    text-indent: 0;
-    opacity: 1;
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-}
-
-.carousel-indicators img {
-    height: inherit;
-}
-.carousel-inner p{
-    color: #b0b0b0;
-}
-
-
-
-@media screen and (max-width: 400px) {
-
-   .carousel-caption h1 {
-    text-transform: uppercase !important;
-    font-weight: 600;
-    font-size: 50px;
-    text-align: center;
-    
-}
-.mine-carousel{
-    padding: 15px;
- 
-}
-.carousel-control-prev-icon{
-    width: 20px;
-    height: 10px;
-}
-.carousel-control-next-icon{
-    width: 20px;
-    height: 10px;
-}
-.collapse .nav-link {
-    color: black !important;
-    font-size: 18px;
-    font-weight: bolder;
-}
+.slick-active { 
+    padding: 20px 0; 
   }
+  
+  .slick-center { 
+    transform: scale(1.08) ;
+  }
+  .slick-slide{
+      opacity: .5;
+      height: auto;
+  }
+  .slick-current{
+      opacity: 1;
+  }
+  .slick-slide:not(.slick-active) { 
+    margin: 20px 0;
+  }
+  .child { 
+    width:100%; 
+  }
+  .slide:not(.slick-active) { 
+    cursor: pointer; 
+  }
+  .pagination {
+    text-align: center; 
+    color: #3197fd;
+    font-size: 2rem;
+  }
+  .slick-prev, .slick-next{
+      background: rgb(97, 84, 84);
+      border-radius: 5px;
+      color: white;
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+
+    .carousel-caption h1 {
+     text-transform: uppercase !important;
+     font-weight: 600;
+     font-size: 50px;
+     text-align: center;
+     
+ }
+ .mine-carousel{
+     padding: 15px;
+  
+ }
+ .carousel-control-prev-icon{
+     width: 20px;
+     height: 10px;
+ }
+ .carousel-control-next-icon{
+     width: 20px;
+     height: 10px;
+ }
+ .collapse .nav-link {
+     color: black !important;
+     font-size: 18px;
+     font-weight: bolder;
+ }
+ .team-details{
+     padding: 20px 0 ;
+ }
+ .item-services{
+     padding: 10px 0;
+ }
+ .foot-item{
+     padding:10px 0;
+ }
+ .item-about{
+     padding: 10px 0;
+ }
+}
