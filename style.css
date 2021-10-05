@@ -171,6 +171,10 @@ body {
     flex-grow: 0 !important;
 }
 
+.carousel-item{
+    transform : .6s ease-in-out !important;
+}
+
 /* icons */
 
 .fas {
@@ -419,7 +423,7 @@ body {
 }
 
 .mine-carousel:hover {
-    background-color: black;
+    background-color: rgb(236, 118, 118);
     opacity: 1;
 }
 
@@ -452,11 +456,9 @@ form .message {
     color: #b0b0b0;
     padding: 0;
 }
-
 #footer-top .list-group-item:hover {
     color: #f25454;
 }
-
 #footer-top .tags a {
     text-decoration: none;
     color: #b0b0b0;
@@ -471,22 +473,18 @@ form .message {
     text-decoration: none;
     border-radius: 3px;
 }
-
 #footer-top .tags a:hover {
     border-color: #f25454;
     color: #f25454;
 }
-
 .footer-bottom {
     background: #1a1a1a;
 }
-
 .footer-bottom p a {
     text-decoration: none;
     color: white !important;
     font-weight: bold;
 }
-
 .footer-bottom p {
     color: #b0b0b0;
 }
@@ -536,12 +534,12 @@ form .message {
     font-size: 2rem;
   }
   .slick-prev, .slick-next{
-      background: rgb(97, 84, 84);
+      background: rgb(44, 43, 43);
       border-radius: 5px;
       color: white;
   }
   .slick-arrow:hover{
-    background-color: black;
+    background-color: rgb(180, 59, 59);
   }
   
   @media screen and (max-width: 763px) {

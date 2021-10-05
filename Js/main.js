@@ -1,4 +1,5 @@
 let about = $("#About-us").offset().top;
+// Navbar scroll
 $(window).scroll(function () {
   let wScroll = $(window).scrollTop();
   if (wScroll >= about - 60) {
@@ -9,6 +10,7 @@ $(window).scroll(function () {
     $("#arrow").css("display", "none");
   }
 });
+
 let changeColor = $("#change-color").outerWidth();
 $(document).ready(() => {
   $("#optionBox").animate({ right: `-${changeColor}` });
@@ -19,8 +21,9 @@ $(document).ready(() => {
     });
   });
 });
+
 $("#arrow").click(() => {
-  $(window).scrollTop(0);
+  $("HTML, BODY").animate({scrollTop : 0},2000);
 });
 
 let colorItem = $(".color-item");
