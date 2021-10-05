@@ -22,6 +22,7 @@ body {
     right: 0;
     z-index: 9999;
     color: white;
+    cursor: pointer;
 }
 #toggleBtn{
     background-color: black;
@@ -34,7 +35,6 @@ body {
     padding: 10px;
 }
 .color-item{
-    /* background-color: rgb(127, 175, 175); */
     height: 30px;
     width: 30px;
     display: inline-block;
@@ -47,6 +47,7 @@ body {
     z-index: 99999;
     background-color: black;
     padding: 10px;
+    cursor: pointer;
     display: none;
 }
 #arrow .fas{
@@ -411,7 +412,6 @@ body {
 
 .mine-carousel {
     overflow: hidden;
-    opacity: .5;
     background-color: transparent;
     border: 1px solid white;
     left: 0;
@@ -419,7 +419,7 @@ body {
 }
 
 .mine-carousel:hover {
-    background-color: white;
+    background-color: black;
     opacity: 1;
 }
 
@@ -540,14 +540,22 @@ form .message {
       border-radius: 5px;
       color: white;
   }
+  .slick-arrow:hover{
+    background-color: black;
+  }
   
-  
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 763px) {
     .carousel-caption h1 {
      text-transform: uppercase !important;
      font-weight: 600;
      font-size: 50px;
      text-align: center;
+ }
+ #optionBox{
+    top: 45%;
+}
+ .carousel-caption{
+     padding-bottom: 0 !important;
  }
  .mine-carousel{
      padding: 15px;
@@ -568,5 +576,9 @@ form .message {
  }
  .item-about{
      padding: 10px 0;
+ }
+ .carousel-control-next-icon, .carousel-control-prev-icon{
+     height: 1rem;
+     width: 1rem;
  }
 }

@@ -57,7 +57,7 @@ $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nex
 $slickEl.slick({
   centerMode: true,
   centerPadding: '100px',
-  slidesToShow: 2,
+  slidesToShow: 3,
   focusOnSelect: true,
   dots: false,
   infinite: true,
